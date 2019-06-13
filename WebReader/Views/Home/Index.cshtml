@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home";
+    var files = Model as List<string>;
+}
+<style>
+    body {
+        background-color: #999;
+    }
+
+    img {
+        border: 1px solid #999999;
+        margin: 5px 0;
+    }
+</style>
+<div class="row">
+    <div class="col-md-12">
+        @foreach (var m in files)
+        {
+            <img src="@m" />
+        }
+    </div>
+</div>
